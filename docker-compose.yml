@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  angular1:
+    image: angular1
+    container_name: angular1
+    network_mode: test
+    build: .
+    #volumes:
+
+    restart: always
+    ports:
+      - 4555:80
+   
